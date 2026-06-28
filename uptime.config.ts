@@ -22,7 +22,7 @@ const workerConfig: WorkerConfig = {
   monitors: [
     {
       id: 'blog',
-      name: 'Blog'.
+      name: 'Blog',
       method: 'GET',
       target: 'https://blog.hpcesia.com',
       statusPageLink: 'https://blog.hpcesia.com',
