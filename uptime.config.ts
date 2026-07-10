@@ -12,7 +12,7 @@ const pageConfig: PageConfig = {
     { link: 'mailto:me@hpcesia.com', label: 'Email Me', highlight: true },
   ],
   group: {
-    '🌐 Public': ['blog'],
+    '🌐 Public': ['blog', 'artalk'],
     // '🔐 Private': [],
   },
 }
@@ -26,6 +26,12 @@ const workerConfig: WorkerConfig = {
       method: 'GET',
       target: 'https://blog.hpcesia.com',
       statusPageLink: 'https://blog.hpcesia.com',
+    },
+    {
+      id: 'artalk',
+      name: 'Artalk',
+      method: 'GET',
+      target: 'https://artalk.hpcesia.com/api/v2/version',
     },
   ],
   // [Optional] Notification settings
