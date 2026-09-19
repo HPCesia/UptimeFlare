@@ -12,7 +12,7 @@ const pageConfig: PageConfig = {
     { link: 'mailto:me@hpcesia.com', label: 'Email Me', highlight: true },
   ],
   group: {
-    '🌐 Public': ['blog', 'artalk'],
+    '🌐 Public': ['blog', 'artalk', 'forgejo'],
     // '🔐 Private': [],
   },
 }
