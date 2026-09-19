@@ -33,6 +33,13 @@ const workerConfig: WorkerConfig = {
       method: 'GET',
       target: 'https://artalk.hpcesia.com/api/v2/version',
     },
+    {
+      id: 'forgejo',
+      name: 'Gate Of Infinity',
+      method: 'GET',
+      target: 'https://git.trin.one/api/v1/version',
+      statusPageLink: 'https://git.trin.one/HPCesia',
+    },
   ],
   // [Optional] Notification settings
   notification: {
