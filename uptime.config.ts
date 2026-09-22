@@ -8,12 +8,10 @@ const pageConfig: PageConfig = {
   links: [
     { link: 'https://codeberg.org/HPCesia', label: 'Codeberg' },
     { link: 'https://github.com/HPCesia', label: 'GitHub' },
-    { link: 'https://blog.hpcesia.com/', label: 'Blog' },
-    { link: 'mailto:me@hpcesia.com', label: 'Email Me', highlight: true },
   ],
   group: {
     '🌐 Public': ['blog', 'artalk', 'forgejo'],
-    // '🔐 Private': [],
+    '🔐 Private': ['vaultwarden', 'wakapi'],
   },
 }
 
@@ -39,6 +37,18 @@ const workerConfig: WorkerConfig = {
       method: 'GET',
       target: 'https://git.trin.one/api/v1/version',
       statusPageLink: 'https://git.trin.one/HPCesia',
+    },
+    {
+      id: 'vaultwarden',
+      name: 'Vaultwarden',
+      method: 'GET',
+      target: 'https://vault.hpcesia.com/alive',
+    },
+    {
+      id: 'wakapi',
+      name: 'Wakapi',
+      method: 'GET',
+      target: 'https://wakapi.hpcesia.com/api/health',
     },
   ],
   // [Optional] Notification settings
